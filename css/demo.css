@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  padding-bottom: 30px;
 }
 .gt_navigation{
   display: flex;
@@ -83,7 +84,8 @@ body{
   background: #000;
   color: #fff;
 }
-.gt_about h2, .gt_gallery h2, .gt_newsletter h2{
+.gt_about h2, .gt_gallery h2, .gt_newsletter h2,
+.gt_contact h2{
   text-align: center;
   font-size: 32px;
   font-family: monospace;
@@ -139,4 +141,18 @@ body{
 .gt_form_group_button{
   text-align: right;
   margin-top: 15px;
+}
+.gt_form_flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+.gt_contact_form{
+  width: 55%;
+  margin: auto;
+}
+#gt_contact_button{width: 190px;}
+footer{
+  text-align: center;
+  font-size: 17px;
 }
