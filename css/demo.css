@@ -1,0 +1,142 @@
+body{
+  margin: 0;
+}
+.gt_navigation{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  top: 20px;
+}
+.gt_logo{
+    width: 10%;
+}
+.gt_header{
+  height: 81px;
+  background: #fff;
+}
+.gt_left_navigation a.active{color: #e9a723;}
+.gt_left_navigation a:hover{color: #e9a723;}
+.gt_left_navigation a{
+  margin-left: 30px;
+  color: #484646;
+  font-size: 18px;
+  font-family: monospace;
+  text-decoration: none;
+}
+.gt_jumbo_section{
+  background: url('../images/background.jpg');
+  margin-top: -20px;
+  height: 600px;
+  background-position: center;
+  background-clip: content-box;
+  background-repeat: round;
+  background-size: contain;
+}
+.gt_services{
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+}
+.gt_services article h2 {
+  text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+  font-weight: 600;
+}
+.gt_services article p {
+  color: black;
+}
+.gt_services article{
+  padding: 20px;
+  margin: 5px;
+  width: 33%;
+  box-shadow: 1px 1px 9px 0px #ccc;
+  min-height: 310px;
+}
+.gt_logo img{
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  position: relative;
+  top: -30px;
+}
+.gt_jumbo_text{
+  width: 60%;
+  margin: auto;
+  position: relative;
+  top: 220px;
+  background: black;
+  padding: 20px;
+}
+.gt_jumbo_text h1{
+  font-size: 35px;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.78;
+}
+.gt_about{
+  padding: 10px;
+  background: #000;
+  color: #fff;
+}
+.gt_about h2, .gt_gallery h2, .gt_newsletter h2{
+  text-align: center;
+  font-size: 32px;
+  font-family: monospace;
+  font-weight: 600;
+}
+.gt_gallery_container{
+  display: flex;
+  overflow: auto;
+  width: 90%;
+  margin: auto;
+  /* margin-bottom: 300px; */
+}
+.gt_gallery-image{
+  width: 210px;
+  height: 210px;
+  border: 1px solid #7d7b7b;
+  margin: 1px;
+  /* box-shadow: 1px 1px 4px #9c9c9c; */
+}
+.gt_gallery-image > img{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.gt_newsletter{
+  background: black;
+  color: #fff;
+  padding: 20px;
+}
+.gt_newsletter form.gt_newsletter_form{
+  width: 50%;
+  margin: auto;
+}
+.gt_form_control{
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: inherit;
+  font-size: 17px;
+  font-family: monospace;
+}
+.gt_form_group{text-align: center;}
+.gt_form_group small{font-size: 16px;}
+.gt_submit_button{
+  padding: 15px;
+  font-size: 20px;
+  background-color: #e9a723;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+.gt_form_group_button{
+  text-align: right;
+  margin-top: 15px;
+}

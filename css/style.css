@@ -1,0 +1,62 @@
+body{
+	background: url("https:kjhsdkjhskdh.jpg");
+}
+h2{
+	text-align: center;
+}
+img{
+	height: 50%;
+	width: 50%;
+	float: right;
+	padding-top: -10px;
+}
+h1{
+	padding: 100px;
+}
+header nav a.atag1{
+	text-decoration: none;
+	padding: 25px;
+	color: lightblue;
+}
+nav{
+	background-color: black;
+}
+p{
+	color: red;
+}
+.B1{
+	color: blue;
+}
+.B2{
+	color: green;
+}
+#clear{
+    clear: both;
+    text-align: left;
+}
+#B3{color:yellow;}
+
+.container{
+	width:100%;
+	background: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box{
+	width: 100px;
+	height: 100px;
+}
+.box1{
+	background: red;
+}.box2{
+	background: black;
+}.box3{
+	background: yellow;
+}.box4{
+	background: green;
+}.box5{
+	background: brown;
+}.box6{
+	background: purple;
+}
