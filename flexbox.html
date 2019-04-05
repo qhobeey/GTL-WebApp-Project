@@ -164,7 +164,8 @@
             <input class="gt_form_control" type="email" placeholder="Enter email">
           </div>
           <div class="gt_form_group">
-            <input class="gt_form_control" type="text" placeholder="Enter phone">
+            <input class="gt_form_control" id="phone_number" oninput="onchangeNumber('phone_number')" type="text" placeholder="Enter phone">
+            <small id="er_phone_number" class="cred"></small>
           </div>
         </div>
         <!-- Display 2 column elemets -->
@@ -180,5 +181,73 @@
       </p>
     </footer>
 
+
+
+
+    <script type="text/javascript">
+
+      function validateEmptyField(id) {
+        if(document.querySelector(`#${id}`).value == '') {
+            return true
+        }else{
+          return false
+        }
+      }
+
+      function validatePhoneInput(number) {
+        var phone = parseInt(number)
+        if(phone == NaN || phone == undefined || phone == "") return false
+        if(number.length < 10 || number.length > 10) {
+          return false
+        }else {
+          return true
+        }
+      }
+
+      function validateTextInput(text) {
+        var errorArray = [".", "-"]
+        for (var i = 0; i < 10; i++) {
+          errorArray.push(String(i))
+        }
+        for (var i = 0; i < errorArray.length; i++) {
+          if(text.includes(errorArray[i])) return false
+        }
+
+        return true
+      }
+
+      function validateEmailInput(email) {
+        var atpos = email.indexOf("@")
+        var dotpos = email.indexOf(".")
+
+        if(atpos < 1 || (dotpos - atpos < 2)) {
+          return false
+        }
+        return true
+      }
+
+      function onchangeNumber(id) {
+        var number = document.querySelector(`#${id}`).value
+        if(validateEmptyField(id) == false) {
+          alertError("Sorry this field is required", id)
+        } else {
+          resetError(id)
+        }
+        if(validatePhoneInput(number) == false) {
+          alertError("Please enter a valid number", id)
+        } else {
+          resetError(id)
+        }
+      }
+
+      function alertError(message, id) {
+        document.querySelector(`#er_${id}`).innerHTML = message
+      }
+
+      function resetError(id) {
+        console.log("changingg");
+        document.querySelector(`#er_${id}`).innerHTML = ""
+      }
+    </script>
   </body>
 </html>
