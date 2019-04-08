@@ -129,7 +129,7 @@ body{
   font-family: monospace;
 }
 .gt_form_group{text-align: center;}
-.gt_form_group small{font-size: 16px;}
+.gt_form_group small{font-size: 16px;  display: block;}
 .gt_submit_button{
   padding: 15px;
   font-size: 20px;
