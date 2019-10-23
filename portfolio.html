@@ -3,26 +3,41 @@
 <head>
 	<title>Appiah Daquah</title>
 	<link rel="stylesheet" type="text/css" href="./css/style2.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-<div class="qh_maincontainer qh_width_100">
-	<header class="qh_header qh_width_100">
-		<nav class="qh_nav">
-			<div class="qh_logo_container">
-				Logo here
-			</div>
-			<div class="qh_menu_container">
-				<a href="">Home</a>
-				<a href="">About</a>
-				<a href="">Services</a>
-				<a href="">Portfolio</a>
-				<a href="">Contact</a>
-			</div>
-		</nav>
-	</header>
-	<section class="qh_jumbosection">
+
+	
+		    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+
+                  <a class="navbar-brand" href="index.html"> Home</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="">About <span class="sr-only">(current)</span></a>
+                      </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                              <a class="nav-link" href="">Portfolio</a>
+                              </li>
+
+                              <li class="nav-item">
+                              <a class="nav-link" href="">Contact</a>
+                              </li>
+                  </div>
+                </nav>
+
+	
+	
 		<h1>Leading Tech Hub in Ghana</h1>
-	</section>
+	
 	<section class="qh_offers">
 		<article>
 			<h2>Meet us</h2>
@@ -57,25 +72,35 @@
 		</article>
 	</section>
 	<section class="qh_contact">
-		<h2>Talk to us</h2>
-		<form id="qh_contactform">
-			<div class="qh_colform">
-				<input type="text" placeholder="First name" class="form-control" name="">
-			</div>
-			<div class="qh_colform">
-				<input type="text" placeholder="First name" class="form-control" name="">
-			</div>
-			<div class="qh_colform">
-				<input type="text" placeholder="First name" class="form-control" name="">
-			</div>
-			<div class="qh_colform">
-				<input type="text" placeholder="First name" class="form-control" name="">
-			</div>
-			<div class="qh_submit">
-				<button type="button" class="qh_button">Submit</button>
-			</div>
-		</form>
+<div class="container">
+                <div class="jumbotron" style="margin:100px;">
+                  <h3 class="display-5" style="text-align: center">Talk To Us</h3>
+                  <br>
+                   <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="firstName">First Name</label>
+                                    <input type="firstname" class="form-control" id="firstName" placeholder="" required>
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="lastname" class="form-control" id="lastName" placeholder="" required>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress">Email</label>
+                                  <input type="text" class="form-control" id="emailAddress" placeholder="" required>
+                                </div>
+								<a href = "http://google.co.in">
+                                <button type="button" class="btn btn-success btn-lg btn-block">Submit</button>
+                                </a>
+</form>
+</div>
+</div>
+
 	</section>
 </div>
 </body>
 </html>
+
+
